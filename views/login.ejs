@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+  <div class="section">
+    <div class="container">
+        <h2>Log In</h2>
+        <form action="/login" method="post">
+        <div class="mb-3">
+            <label for="email" class="form-label">Usename</label>
+            <input type="email" class="form-control" name="username">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        <button type="submit" class="x col-12 btn btn-primary">Log In</button>
+        <a class="x col-12 btn btn-outline-primary" role="button" href="/auth/google">Continue with Google</a>
+        <p id="login">Don't have an account? <a href="/signup">Sign Up</a></p>
+        </form>
+    </div>
+  </div>
+<%- include('partials/footer') %>
